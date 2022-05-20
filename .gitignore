@@ -40,3 +40,6 @@ vignettes/*.pdf
 data
 
 .DS_Store
+
+data/*
+data-raw/*
