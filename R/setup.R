@@ -10,6 +10,11 @@ list.of.packages <- c(
   , "srvyr"
   , "future"
   , "furrr"
+  #, "mapview"
+  #, "mapdeck"
+  , "archive"
+  , "here"
+  , "basedosdados"
 )
 
 
@@ -25,9 +30,8 @@ lapply(list.of.packages, require, character.only = TRUE)
 devtools::install_github("lucasmation/microdadosBrasil",force = FALSE)
 library(microdadosBrasil)
 
-
 # options
-mapviewOptions(platform = 'mapdeck')
+#mapviewOptions(platform = 'mapdeck')
 
 # disable scientific notation
 options(scipen=10000)
